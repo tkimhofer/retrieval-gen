@@ -1,0 +1,59 @@
+{
+  "run_id": "0929c1b4-1fad-4a9d-8938-0cf83a9852a2",
+  "model": "gpt-5-nano",
+  "created_at": "2025-08-12T16:06:30.050067+00:00",
+  "prompt_version": "v0.1",
+  "system_prompt": "SYSTEM (Rolle):\nDu bist ein neutraler, faktenorientierter Assistent für kommunalpolitische Protokolle. Du extrahierst Informationen strikt aus dem vorliegenden Text, ohne zu spekulieren. Du gibst ausschließlich valide, parsebare JSON-Ausgaben gemäß Schema zurück. Wenn Angaben fehlen, schreibe \"keine Angabe\".\n\nBENUTZER (Rolle) – Anweisung + Inputplatzhalter:\nAufgabe: Verarbeite den folgenden Tagesordnungspunkt (TOP) aus einer Ratssitzung.\n\nZiele:\n1) Neutrale Kurz-Zusammenfassung für Öffentlichkeit/Medien.\n2) Strukturiertes Fakten- und Positions-Extrakt für RAG.\n\nRegeln:\n- Kein Fließtext außerhalb der JSON-Felder.\n- Keine Bewertung, nur im Text belegbare Fakten/Zitate.\n- Zahlen/Eurobeträge/Prozente/Termine normalisieren (z. B. 165000000, „2025-04-30“).\n- Jede Liste darf leer sein, aber Felder dürfen nie fehlen.\n- Verwende \"keine Angabe\", wenn etwas nicht vorhanden ist.\n- Zitate: kurze wörtliche Formulierungen oder sehr nah am Text; Quelle angeben.\n- Parteien/Fraktionen und Personen exakt benennen, wie im Text.\n- Ein TOP = genau ein JSON-Objekt.\n\nJSON-Schema (Ausgabe muss exakt diesem Schema entsprechen):\n{\n  \"top_id\": \"string\",\n  \"titel\": \"string\",\n  \"kurzfassung\": \"string\",\n  \"zeitraum_bezug\": [\"string\"],\n  \"zahlen_kennzahlen\": [\n    {\"bezeichnung\":\"string\",\"wert_num\":\"number\",\"einheit\":\"string\",\"kontext\":\"string\"}\n  ],\n  \"rechtliche_bezuege\": [\"string\"],\n  \"massnahmen_beschluesse\": [\"string\"],\n  \"parteipositionen\": [\n    {\n      \"partei_fraktion\": \"string\",\n      \"haltung\": \"pro|contra|neutral|keine Angabe\",\n      \"kernaussagen\": [\"string\"],\n      \"zitate\": [{\"quelle_person\":\"string\",\"zitat\":\"string\"}]\n    }\n  ],\n  \"verwaltungsposition\": {\n    \"sprecher_person\": \"string\",\n    \"kernaussagen\": [\"string\"],\n    \"zitate\": [{\"zitat\":\"string\"}]\n  },\n  \"kritik_punkte\": [\"string\"],\n  \"erklaerungen_rechtfertigungen\": [\"string\"],\n  \"risiken\": [\"string\"],\n  \"offene_fragen\": [\"string\"],\n  \"provenienz\": [\n    {\"typ\":\"satz|absatz|tabelle\",\"auszug\":\"string\"}\n  ],\n  \"verstaendlichkeit_score\": 0.0\n}\n\nHinweise zur Befüllung:\n- titel: knapp, z. B. „GEBAG/FE – finanzielle Lage, Teilvermögensübertragung, Steuerfolgen“.\n- zeitraum_bezug: alle relevanten Jahre/Monate (z. B. „2023“, „2024-12-31“, „2025-02“).\n- zahlen_kennzahlen: z. B. 165 Mio €, 123,5 Mio €, 41,5 Mio €, 19 % EK-Quote, 3 Mio € Zinsen/Jahr, 5,5 Mio € GrESt.\n- rechtliche_bezuege: §§ 15a InsO, §§ 172 ff. AO, § 6a GrEStG, HGB, GuV etc.\n- parteipositionen: erfasse explizite Aussagen von Fraktionen/Parteien; wenn nur FDP als Fragesteller erkennbar ist, deren Kritikpunkte aufnehmen; andere als „keine Angabe“.\n- verwaltungsposition: Aussagen des Stadtdirektors (Murrack) komprimieren; markante Zitate/Begründungen.\n- kritik_punkte: Vorwürfe (Überbewertungen, spätes Informieren, Controlling/Aufsicht).\n- erklaerungen_rechtfertigungen: Begründungen (externe Faktoren, positive Tendenzen, Maßnahmenpaket).\n- risiken: Insolvenzrisiko, Steuer-Nachzahlungen, Governance/Controlling-Lücken.\n- offene_fragen: was aus dem Text unbeantwortet bleibt.\n- provenienz: 3–6 kurze wörtliche Auszüge als Belege.\n- verstaendlichkeit_score: Zahl 0–1 (1 = leicht für Allgemeinheit).",
+  "user_input": "Änderung der Ausschussbesetzung; hier: Beratendes Mitglied (Schulformsprecher der Berufskollegs): Beschluss 1. Herr Sven Dielkus wird als Nachfolger von Herrn Egbert Meiritz zum beratenden Mitglied (Schulformsprecher der Berufskollegs) berufen. 2. Frau Simone Peeters wird zum stellvertretenden beratenden Mitglied (stellvertretende Schulformsprecherin der Berufskollegs) berufen. Beratungsergebnis -einstimmig-",
+  "input_hash": "0d0cbd4533a12450866486b5138e097859c5c9edb82ed866dbe144dd6e06e8fb",
+  "params": {
+    "temperature": 0.1
+  },
+  "output_text": "{\n  \"top_id\": \"TOP-Änderung der Ausschussbesetzung – beratendes Mitglied Schulformsprecher Berufskollegs\",\n  \"titel\": \"Änderung der Ausschussbesetzung – Beratendes Mitglied (Schulformsprecher Berufskollegs) und stellvertretendes beratendes Mitglied\",\n  \"kurzfassung\": \"Beschluss zur Änderung der Ausschussbesetzung: Sven Dielkus wird neues beratendes Mitglied; Simone Peeters wird stellvertretendes beratendes Mitglied; Beratungsergebnis einstimmig.\",\n  \"zeitraum_bezug\": [],\n  \"zahlen_kennzahlen\": [],\n  \"rechtliche_bezuege\": [],\n  \"massnahmen_beschluesse\": [\n    \"Beschluss 1: Herr Sven Dielkus wird als Nachfolger von Herrn Egbert Meiritz zum beratenden Mitglied (Schulformsprecher der Berufskollegs) berufen.\",\n    \"Beschluss 2: Frau Simone Peeters wird zum stellvertretenden beratenden Mitglied (stellvertretende Schulformsprecherin der Berufskollegs) berufen.\",\n    \"Beratungsergebnis: einstimmig.\"\n  ],\n  \"parteipositionen\": [],\n  \"verwaltungsposition\": {\n    \"sprecher_person\": \"keine Angabe\",\n    \"kernaussagen\": [],\n    \"zitate\": []\n  },\n  \"kritik_punkte\": [],\n  \"erklaerungen_rechtfertigungen\": [],\n  \"risiken\": [],\n  \"offene_fragen\": [],\n  \"provenienz\": [\n    {\"typ\":\"satz\",\"auszug\":\"Beschluss 1. Herr Sven Dielkus wird als Nachfolger von Herrn Egbert Meiritz zum beratenden Mitglied (Schulformsprecher der Berufskollegs) berufen.\"},\n    {\"typ\":\"satz\",\"auszug\":\"2. Frau Simone Peeters wird zum stellvertretenden beratenden Mitglied (stellvertretende Schulformsprecherin der Berufskollegs) berufen.\"},\n    {\"typ\":\"satz\",\"auszug\":\"Beratungsergebnis -einstimmig-\"}\n  ],\n  \"verstaendlichkeit_score\": 0.9\n}",
+  "output_json": {
+    "top_id": "TOP-Änderung der Ausschussbesetzung – beratendes Mitglied Schulformsprecher Berufskollegs",
+    "titel": "Änderung der Ausschussbesetzung – Beratendes Mitglied (Schulformsprecher Berufskollegs) und stellvertretendes beratendes Mitglied",
+    "kurzfassung": "Beschluss zur Änderung der Ausschussbesetzung: Sven Dielkus wird neues beratendes Mitglied; Simone Peeters wird stellvertretendes beratendes Mitglied; Beratungsergebnis einstimmig.",
+    "zeitraum_bezug": [],
+    "zahlen_kennzahlen": [],
+    "rechtliche_bezuege": [],
+    "massnahmen_beschluesse": [
+      "Beschluss 1: Herr Sven Dielkus wird als Nachfolger von Herrn Egbert Meiritz zum beratenden Mitglied (Schulformsprecher der Berufskollegs) berufen.",
+      "Beschluss 2: Frau Simone Peeters wird zum stellvertretenden beratenden Mitglied (stellvertretende Schulformsprecherin der Berufskollegs) berufen.",
+      "Beratungsergebnis: einstimmig."
+    ],
+    "parteipositionen": [],
+    "verwaltungsposition": {
+      "sprecher_person": "keine Angabe",
+      "kernaussagen": [],
+      "zitate": []
+    },
+    "kritik_punkte": [],
+    "erklaerungen_rechtfertigungen": [],
+    "risiken": [],
+    "offene_fragen": [],
+    "provenienz": [
+      {
+        "typ": "satz",
+        "auszug": "Beschluss 1. Herr Sven Dielkus wird als Nachfolger von Herrn Egbert Meiritz zum beratenden Mitglied (Schulformsprecher der Berufskollegs) berufen."
+      },
+      {
+        "typ": "satz",
+        "auszug": "2. Frau Simone Peeters wird zum stellvertretenden beratenden Mitglied (stellvertretende Schulformsprecherin der Berufskollegs) berufen."
+      },
+      {
+        "typ": "satz",
+        "auszug": "Beratungsergebnis -einstimmig-"
+      }
+    ],
+    "verstaendlichkeit_score": 0.9
+  },
+  "latency_ms": 15716,
+  "input_tokens": 1056,
+  "output_tokens": 3459,
+  "error": null,
+  "meta": {
+    "meeting_date": "20250224",
+    "top_id": "4"
+  }
+}
