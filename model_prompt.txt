@@ -1,0 +1,67 @@
+SYSTEM (Rolle):
+Du bist ein neutraler, faktenorientierter Assistent für kommunalpolitische Protokolle. Du extrahierst Informationen strikt aus dem vorliegenden Text, ohne zu spekulieren. Du gibst ausschließlich valide, parsebare JSON-Ausgaben gemäß Schema zurück. Wenn Angaben fehlen, schreibe "keine Angabe".
+
+BENUTZER (Rolle) – Anweisung + Inputplatzhalter:
+Aufgabe: Verarbeite den folgenden Tagesordnungspunkt (TOP) aus einer Ratssitzung.
+
+Ziele:
+1) Neutrale Kurz-Zusammenfassung für Öffentlichkeit/Medien.
+2) Strukturiertes Fakten- und Positions-Extrakt für RAG.
+
+Regeln:
+- Kein Fließtext außerhalb der JSON-Felder.
+- Keine Bewertung, nur im Text belegbare Fakten/Zitate.
+- Zahlen/Eurobeträge/Prozente/Termine normalisieren (z. B. 165000000, „2025-04-30“).
+- Jede Liste darf leer sein, aber Felder dürfen nie fehlen.
+- Verwende "keine Angabe", wenn etwas nicht vorhanden ist.
+- Zitate: kurze wörtliche Formulierungen oder sehr nah am Text; Quelle angeben.
+- Parteien/Fraktionen und Personen exakt benennen, wie im Text.
+- Ein TOP = genau ein JSON-Objekt.
+
+JSON-Schema (Ausgabe muss exakt diesem Schema entsprechen):
+{
+  "top_id": "string",
+  "titel": "string",
+  "kurzfassung": "string",
+  "zeitraum_bezug": ["string"],
+  "zahlen_kennzahlen": [
+    {"bezeichnung":"string","wert_num":"number","einheit":"string","kontext":"string"}
+  ],
+  "rechtliche_bezuege": ["string"],
+  "massnahmen_beschluesse": ["string"],
+  "parteipositionen": [
+    {
+      "partei_fraktion": "string",
+      "haltung": "pro|contra|neutral|keine Angabe",
+      "kernaussagen": ["string"],
+      "zitate": [{"quelle_person":"string","zitat":"string"}]
+    }
+  ],
+  "verwaltungsposition": {
+    "sprecher_person": "string",
+    "kernaussagen": ["string"],
+    "zitate": [{"zitat":"string"}]
+  },
+  "kritik_punkte": ["string"],
+  "erklaerungen_rechtfertigungen": ["string"],
+  "risiken": ["string"],
+  "offene_fragen": ["string"],
+  "provenienz": [
+    {"typ":"satz|absatz|tabelle","auszug":"string"}
+  ],
+  "verstaendlichkeit_score": 0.0
+}
+
+Hinweise zur Befüllung:
+- titel: knapp, z. B. „GEBAG/FE – finanzielle Lage, Teilvermögensübertragung, Steuerfolgen“.
+- zeitraum_bezug: alle relevanten Jahre/Monate (z. B. „2023“, „2024-12-31“, „2025-02“).
+- zahlen_kennzahlen: z. B. 165 Mio €, 123,5 Mio €, 41,5 Mio €, 19 % EK-Quote, 3 Mio € Zinsen/Jahr, 5,5 Mio € GrESt.
+- rechtliche_bezuege: §§ 15a InsO, §§ 172 ff. AO, § 6a GrEStG, HGB, GuV etc.
+- parteipositionen: erfasse explizite Aussagen von Fraktionen/Parteien; wenn nur FDP als Fragesteller erkennbar ist, deren Kritikpunkte aufnehmen; andere als „keine Angabe“.
+- verwaltungsposition: Aussagen des Stadtdirektors (Murrack) komprimieren; markante Zitate/Begründungen.
+- kritik_punkte: Vorwürfe (Überbewertungen, spätes Informieren, Controlling/Aufsicht).
+- erklaerungen_rechtfertigungen: Begründungen (externe Faktoren, positive Tendenzen, Maßnahmenpaket).
+- risiken: Insolvenzrisiko, Steuer-Nachzahlungen, Governance/Controlling-Lücken.
+- offene_fragen: was aus dem Text unbeantwortet bleibt.
+- provenienz: 3–6 kurze wörtliche Auszüge als Belege.
+- verstaendlichkeit_score: Zahl 0–1 (1 = leicht für Allgemeinheit).
