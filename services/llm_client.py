@@ -2,6 +2,7 @@ from dataclasses import asdict
 import hashlib, json, os, uuid
 import datetime as dt
 import re
+from typing import Optional, Dict, Any
 from textwrap import dedent
 from git import Repo
 import time
@@ -18,9 +19,10 @@ class LLMRun:
         self.prompt = self.import_prompt(path_prompt)
 
 
-    def run(self, model, top_id, meeting_date, top_text, pars={"temperature": 0.2}):
+    def run(self, model, top_id, meeting_date, top_text, pars: Optional[Dict[str, Any]] = None):
 
-        meta = {'meeting_date': meeting_date, 'top_id': top_id}
+        pars = {"temperature": 0.2} if pars is None else pars
+        meta = {"meeting_date": meeting_date, "top_id": top_id}
 
         # git_version_info = self.last_commit_msg_for_prompt(repo_path=".", file_path=self.path_prompt)
         # self.last_commit_msg_for_prompt(repo_path=".", file_path='top_prompt.txt')
@@ -40,15 +42,14 @@ class LLMRun:
 
         t0 = time.time()
         model_response = self.model_response(model, query.system_prompt, query.user_input)
-        tdiff_ms = int((time.time() - t0) * 1000)
+        query.latency_ms = int((time.time() - t0) * 1000)
 
-        query.output_text  = getattr(model_response, "output_text", None)
-        query.latency_ms = tdiff_ms
+        query_output_text  = getattr(model_response, "output_text", None)
 
         try:
             query.output_json = json.loads(query.output_text)
         except json.JSONDecodeError as e:
-            query.error = e
+            query.error = str(e)
 
 
         usage = getattr(model_response, "usage", None)
