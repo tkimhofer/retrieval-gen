@@ -44,7 +44,7 @@ class LLMRun:
         model_response = self.model_response(model, query.system_prompt, query.user_input)
         query.latency_ms = int((time.time() - t0) * 1000)
 
-        query_output_text  = getattr(model_response, "output_text", None)
+        query.output_text  = getattr(model_response, "output_text", None)
 
         try:
             query.output_json = json.loads(query.output_text)
@@ -59,7 +59,7 @@ class LLMRun:
 
         # write data to file
         file_id = "_".join(list(query.meta.values())+[query.prompt_version, query.model]) +".jsonl"
-        file_path = os.path.join('model_response', file_id)
+        file_path = os.path.join('corpus', 'chunks', file_id)
         self.log_run_to_jsonl(data=query, path=file_path)
 
     @staticmethod
@@ -93,7 +93,7 @@ class LLMRun:
     @staticmethod
     def log_run_to_jsonl(data: LLMData, path: str = "llm_runs.jsonl") -> None:
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-        with open(path, "a", encoding="utf-8") as f:
+        with open(path, "w", encoding="utf-8") as f:
             f.write(json.dumps(asdict(data), ensure_ascii=False,  indent=2) + "\n")
 
 
