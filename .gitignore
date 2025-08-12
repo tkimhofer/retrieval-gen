@@ -1,6 +1,10 @@
 model_response/*
 !model_response/06.05.2025_15_v0.1_gpt-5-nano.jsonl
 
+corpus/source_pdfs/*
+!corpus/source_pdfs/README.md
+!corpus/source_pdfs/manifest.jsonl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

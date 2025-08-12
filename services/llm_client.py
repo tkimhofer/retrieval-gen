@@ -45,6 +45,12 @@ class LLMRun:
         query.output_text  = getattr(model_response, "output_text", None)
         query.latency_ms = tdiff_ms
 
+        try:
+            query.output_json = json.loads(query.output_text)
+        except json.JSONDecodeError as e:
+            query.error = e
+
+
         usage = getattr(model_response, "usage", None)
         if usage:
             query.input_tokens = getattr(usage, "input_tokens", None)
