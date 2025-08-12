@@ -7,6 +7,13 @@ corpus/source_pdfs/*
 
 services/chunking.py
 
+corpus/chunks/20250224_duisburg_ratssitzung_öffentlich
+#!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/all_tops.jsonl
+!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/top_2.jsonl
+!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/top_3.jsonl
+!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/top_4.jsonl
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
