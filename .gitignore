@@ -5,6 +5,8 @@ corpus/source_pdfs/*
 !corpus/source_pdfs/README.md
 !corpus/source_pdfs/manifest.jsonl
 
+services/chunking.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
