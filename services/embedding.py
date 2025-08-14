@@ -86,17 +86,17 @@ class Transformer:
 
         if dist == 'cos':
             # normalise len
-            self.emb_top_norm = self.emb_top / np.linalg.norm(self.emb_top)
-            self.emb_chunk_norm =  self.emb_chunk / np.linalg.norm(self.emb_chunk)
+            self.emb_top_norm = self.emb_top / np.linalg.norm(self.emb_top, axis=1, keepdims=True)
+            self.emb_chunk_norm =  self.emb_chunk / np.linalg.norm(self.emb_chunk, axis=1, keepdims=True)
         else:
             self.emb_top_norm = self.emb_top
             self.emb_chunk_norm = self.emb_chunk
 
         self.index_top = faiss.IndexFlatIP(self.emb_top_norm.shape[1])
-        self.index_top.add(self.emb_top_norm)
+        self.index_top.add(self.emb_top_norm.astype('float32'))
 
         self.index_chunk = faiss.IndexFlatIP(self.emb_chunk_norm.shape[1])
-        self.index_chunk.add(self.emb_chunk_norm)
+        self.index_chunk.add(self.emb_chunk_norm.astype('float32'))
 
 
     def run(self, path='corpus/chunks', pattern=''):
@@ -207,10 +207,3 @@ class Transformer:
             show_progress_bar=False,
         )
         return vecs.astype("float32")
-
-    # # 2) build dense index (cosine via dot product on normalized vectors)
-    # @staticmethod
-    # def build_faiss_index(X: np.ndarray) -> faiss.Index:
-    #     index = faiss.IndexFlatIP(X.shape[1])  # inner product == cosine on normalized vectors
-    #     index.add(X)
-    #     return index
