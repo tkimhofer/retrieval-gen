@@ -1,6 +1,6 @@
 # corpus/text
 
-This directory contains text extracted from source PDFs** (e.g., official documents from Duisburg city council meetings – *Ratssitzung*).  
+This directory contains text extracted from source PDFs (e.g., official documents from Duisburg city council meetings – *Ratssitzung*).  
 Each file is stored in JSON format, representing the structured content of a single *TOP* (Tagesordnungspunkt / agenda item).
 
 ## Folder structure
