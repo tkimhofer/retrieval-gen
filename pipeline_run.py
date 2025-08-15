@@ -1,6 +1,6 @@
-from services.chunking import Ratssiztung
-from services.llm_client import LLMRun
-from services.embedding import Transformer, Retriever
+from services.docPrep.chunking import Ratssiztung
+from services.docPrep.llm_client import LLMRun
+from services.retrieval.embedding import Transformer, Retriever
 from openai import OpenAI
 import os, json
 from dotenv import load_dotenv

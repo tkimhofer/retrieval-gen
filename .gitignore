@@ -5,7 +5,7 @@ corpus/source_pdfs/*
 !corpus/source_pdfs/README.md
 !corpus/source_pdfs/manifest.jsonl
 
-services/chunking.py
+services/docPrep/chunking.py
 
 corpus/text/20250224_duisburg_ratssitzung_öffentlich/*
 #!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/all_tops.jsonl
