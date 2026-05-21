@@ -29,8 +29,6 @@ Datengrundlage ist das öffentliche Ratsinformationssystem der Stadt Duisburg.
 | `vo[xxxx].asp` | Vorlagen |
 | `do[xxxx].asp` | Dokumente |
 
-(Sitzungsdaten werden ca alle sechs Monate aktualisiert)
-
 
 ### Abbildung von Strukturen und Zusammenhängen
 - Darstellung in einer Graph-Datenbank (Neo4j): 
