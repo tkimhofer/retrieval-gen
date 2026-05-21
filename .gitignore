@@ -1,17 +1,44 @@
+bürgerportal_dui/**
+
+# keeping examples
+!bürgerportal_dui/parsed/meetings/RAT_2026_0002.json
+!bürgerportal_dui/parsed/persons/5717.json
+!bürgerportal_dui/parsed/tops/RAT_2026_0002:Ö:43.json
+# matching vorlage: #26-0084
+
+corpus/**
+!corpus/chunks/20250224_2_v0.1_gpt-5-nano.jsonl
+!corpus/source_pdfs/manifest.jsonl
+!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_2.jsonl
+
+#corpus/source_pdfs/*
+#!corpus/source_pdfs/README.md
+#!corpus/source_pdfs/manifest.jsonl
+#corpus/text/20250224_duisburg_ratssitzung_öffentlich/*
+#!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/all_tops.jsonl
+#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_2.jsonl
+#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_3.jsonl
+#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_4.jsonl
+
+figures/**
+
+frontend/**
+!frontend/chat_chainlit/app.py
+!frontend/chat_chainlit/chatbot.py
+!frontend/chat_chainlit/guardrails.py
+!frontend/chat_chainlit/config.toml
+
+graphdb/**
+!graphdb/docker-compose.yml
+
+
+
 model_response/*
 !model_response/06.05.2025_15_v0.1_gpt-5-nano.jsonl
 
-corpus/source_pdfs/*
-!corpus/source_pdfs/README.md
-!corpus/source_pdfs/manifest.jsonl
 
 services/docPrep/chunking.py
 
-corpus/text/20250224_duisburg_ratssitzung_öffentlich/*
-#!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/all_tops.jsonl
-!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_2.jsonl
-!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_3.jsonl
-!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_4.jsonl
 
 corpus/chunks/*
 !corpus/chunks/20250224_2_v0.1_gpt-5-nano.jsonl

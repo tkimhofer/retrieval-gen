@@ -4,10 +4,9 @@ import datetime as dt
 import re
 from typing import Optional, Dict, Any
 from textwrap import dedent
-from git import Repo
 import time
 
-from .llm_data import LLMData
+from .types import LLMData
 
 
 class LLMRun:

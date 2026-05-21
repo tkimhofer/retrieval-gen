@@ -1,10 +1,14 @@
-# ollama_client.py
 import time
 import uuid
 import requests
 from typing import Any, Dict, List, Union, Optional
+from urllib.parse import urljoin
+import json
 
 OllamaInput = Union[str, List[Dict[str, str]]]
+
+MODEL_URL = 'http://192.168.77.24:1234'
+model = 'openai/gpt-oss-20b'
 
 class OllamaClient:
     def __init__(self, base_url: str = "http://localhost:11434"):

@@ -177,6 +177,7 @@ class Transformer:
 
         return "\n".join(parts)
 
+
     @staticmethod
     def simple_paragraph_chunks(text, max_chars: int = 1200, overlap: int = 150) -> List[Dict]:
         """Split into roughly paragraph-sized windows with overlap (char-based approximation)."""
