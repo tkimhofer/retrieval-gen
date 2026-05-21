@@ -1,0 +1,5 @@
+[auth]
+method = "default"
+
+[UI]
+hide_readme = true

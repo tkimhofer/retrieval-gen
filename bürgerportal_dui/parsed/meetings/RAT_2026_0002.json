@@ -1,0 +1,684 @@
+{
+  "title": "öffentliche/nichtöffentliche Sitzung des Rates der Stadt - 04.05.2026 - 15:05-19:53 Uhr",
+  "location": "Philharmonie - Mercatorhalle Duisburg, Landfermannstraße 6, 47051 Duisburg",
+  "Sitzung": "RAT/2026/0002",
+  "Gremium": "Rat der Stadt",
+  "Datum": "04.05.2026",
+  "Zeit": "15:05-19:53 Uhr",
+  "source_url": "https://sessionnet.owl-it.de/duisburg/bi/si0057.asp?__ksinr=20094921",
+  "attendence": [
+    {
+      "name": "Herr Oberbürgermeister Link, Sören",
+      "id": "5717",
+      "party": null,
+      "role": "Oberbürgermeister",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Baser, Ünsal",
+      "id": "6321",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Bäumle, Daniela",
+      "id": "9837",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Bluhm, Dietmar",
+      "id": "6112",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Boschen, Hans Peter",
+      "id": "6604",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Celenk, Aysegül Jülide",
+      "id": "9265",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Demming-Rosenberg, Andrea",
+      "id": "2171",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitzende"
+    },
+    {
+      "name": "Ratsherr Edel, Jürgen",
+      "id": "5358",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsherr Engert, Sven",
+      "id": "12034",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Erdal, Ersin",
+      "id": "5672",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Ernst, Uwe",
+      "id": "9267",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Friedrich, Reiner",
+      "id": "1859",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Gutowski, Renate Hannelore",
+      "id": "6601",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Haag, Mariss",
+      "id": "12032",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Hoffmann, Daniela",
+      "id": "9291",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Keteci, Muhammet",
+      "id": "6779",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Bürgermeisterin Klabuhn, Edeltraud",
+      "id": "6576",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": "1. Bürgermeisterin"
+    },
+    {
+      "name": "Ratsherr Krusch, Tom",
+      "id": "12033",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Kuntke, Merve Deniz",
+      "id": "6579",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitzende"
+    },
+    {
+      "name": "Ratsherr Lieske, Dieter",
+      "id": "5361",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Mellenthin, Marcus",
+      "id": "6587",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Müller, Patrick",
+      "id": "9884",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Neuhaus, Jannik",
+      "id": "9233",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Röser, Sascha",
+      "id": "6581",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Sagurna, Bruno",
+      "id": "3574",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": "Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsherr Sivananda, Senthuran",
+      "id": "9658",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Steinke, Torsten",
+      "id": "6873",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Stradmann, Hans-Dieter",
+      "id": "9264",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Thewissen, Bernd",
+      "id": "6131",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Ungar, Sarah",
+      "id": "11007",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr von Häfen, Werner",
+      "id": "4513",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Westerhoven, Sascha",
+      "id": "9697",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Zander, Susanne",
+      "id": "5425",
+      "party": "SPD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Betz, Heike",
+      "id": "9279",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Braun, Freya",
+      "id": "10977",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Dehnen, Sabine",
+      "id": "9304",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Groß, Carsten",
+      "id": "9325",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": "2. stv. Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsherr Imamura, Alan",
+      "id": "6573",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": "1. stv. Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsfrau Kehr, Nicola",
+      "id": "9708",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Korneli, Dirk",
+      "id": "9844",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Laasch, Andreas",
+      "id": "9275",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Laube, Jörg",
+      "id": "9277",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Maschinsky, Marcus Gerhard",
+      "id": "9278",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Nikolic, Stiv",
+      "id": "9867",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Schaary, Alexander Niklas",
+      "id": "9280",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": "Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsherr Schmeink, Florian",
+      "id": "13043",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Schülpen, Ludger Gerhard",
+      "id": "12037",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Spank, Markus Martin",
+      "id": "12035",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Trump, Monique",
+      "id": "10978",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr von Coll, Christian Falk",
+      "id": "12038",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Walgenbach, Sebastian",
+      "id": "9775",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Welzenbach, Ina-Wilhelmine",
+      "id": "9946",
+      "party": "AfD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr AVCI, Sevket",
+      "id": "5588",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Back, Nicolas",
+      "id": "6661",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Bettges, Gertrud",
+      "id": "6145",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitzende"
+    },
+    {
+      "name": "Ratsherr Brotzki, Ralf Jörg",
+      "id": "5520",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsfrau Büttgenbach, Eva",
+      "id": "9197",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Dietl, Sonja",
+      "id": "9171",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Griebeling, Peter",
+      "id": "3599",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Heidenreich, Frank",
+      "id": "3690",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Ibe, Peter",
+      "id": "1978",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Klein, Elmar",
+      "id": "1750",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Bürgermeisterin Linn, Sylvia",
+      "id": "5457",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": "2. Bürgermeisterin"
+    },
+    {
+      "name": "Ratsherr Mahlberg, Thomas",
+      "id": "1893",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": "Fraktionsvorsitzender"
+    },
+    {
+      "name": "Ratsherr Schleß, Dennis",
+      "id": "6782",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Schwertner, Wolfgang",
+      "id": "6496",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Steinke, Udo",
+      "id": "1798",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Wormuth, Silke",
+      "id": "5512",
+      "party": "CDU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Aksu, Ozan",
+      "id": "5662",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Betz, Ella",
+      "id": "9944",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Iseini, Florim",
+      "id": "9861",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Kabchi, Ikram",
+      "id": "9694",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Lütke, Felix",
+      "id": "9268",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": "Doppelspitze"
+    },
+    {
+      "name": "Ratsfrau Osman, Pelin",
+      "id": "6977",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Dr. Ritter, Sebastian",
+      "id": "6457",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Selzer, Kathrin",
+      "id": "9272",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau von Spiczak-Brzezinski, Anna",
+      "id": "6444",
+      "party": "Bündnis 90/Die Grünen",
+      "role": "Ratsmitglied",
+      "extra": "Doppelspitze"
+    },
+    {
+      "name": "Ratsherr Fürmann, Herbert",
+      "id": "4696",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Gribaa, Julien Soufian",
+      "id": "6999",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitz"
+    },
+    {
+      "name": "Ratsfrau Gül, Zozan",
+      "id": "12039",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Laakmann, Barbara",
+      "id": "6102",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": "Fraktionsvorsitzende"
+    },
+    {
+      "name": "Ratsherr Riechert, John Robbin",
+      "id": "12040",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Waschko, Pia",
+      "id": "9878",
+      "party": "Die Linke.",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Becker, Uwe",
+      "id": "5924",
+      "party": "Junges Duisburg",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Beltermann, Oliver",
+      "id": "6154",
+      "party": "Junges Duisburg",
+      "role": "Ratsmitglied",
+      "extra": "stv. Fraktionsvorsitz"
+    },
+    {
+      "name": "Ratsherr Bruns, Louis Andreas",
+      "id": "9670",
+      "party": "Junges Duisburg",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Engeln, Frederik",
+      "id": "6285",
+      "party": "Junges Duisburg",
+      "role": "Ratsmitglied",
+      "extra": "Fraktionsvorsitz"
+    },
+    {
+      "name": "Ratsherr Hagenbuck, Karlheinz",
+      "id": "1635",
+      "party": "SGU",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsfrau Wedding, Christiane",
+      "id": "6173",
+      "party": "Junges Duisburg",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Durmus, Yasar",
+      "id": "9300",
+      "party": "DAL-WGD",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Güzey, Altan",
+      "id": "9469",
+      "party": "Tierschutz",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Yildirim, Ayhan",
+      "id": "5676",
+      "party": "DAL-WGD",
+      "role": "Ratsmitglied",
+      "extra": "Gruppensprecher"
+    },
+    {
+      "name": "Ratsherr Albrecht, Frank",
+      "id": "5544",
+      "party": "FDP",
+      "role": "Ratsmitglied",
+      "extra": "stv. Gruppensprecher"
+    },
+    {
+      "name": "Ratsherr Alefs, Oliver",
+      "id": "9283",
+      "party": "FDP",
+      "role": "Ratsmitglied",
+      "extra": "Gruppensprecher"
+    },
+    {
+      "name": "Ratsherr Kocalar, Erkan",
+      "id": "5455",
+      "party": "Bündnis Sahra Wagenknecht",
+      "role": "Ratsmitglied",
+      "extra": null
+    },
+    {
+      "name": "Ratsherr Kaya, Mehmet",
+      "id": "9695",
+      "party": "ABI",
+      "role": "Ratsmitglied",
+      "extra": null
+    }
+  ],
+  "saved_at": "2026-05-19T16:55:00Z"
+}

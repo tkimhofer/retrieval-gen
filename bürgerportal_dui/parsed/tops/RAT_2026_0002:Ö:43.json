@@ -1,0 +1,43 @@
+{
+  "top_id": "RAT_2026_0002:Ö:43",
+  "meeting_id": "RAT/2026/0002",
+  "name": "Vereinbarung über die kommunalen Zuwendungen zu den Leistungen der AIDS-Hilfe Duisburg/Kreis Wesel e.V. zwischen der Stadt Duisburg und dem Kreis Wesel, Sicherstellung des gesetzlichen Auftrags ab 2027",
+  "public": true,
+  "type": "Beschlussvorlagen",
+  "antrag_party": [],
+  "aktenzeichen": null,
+  "vorlage_id": "26-0084",
+  "vorlage_url": "https://sessionnet.owl-it.de/duisburg/bi/vo0050.asp?__kvonr=20134478",
+  "beschluss": {
+    "beraturngsergebnis_1": "Beratungsergebnis: Einstimmig beschlossen",
+    "beraturngsergebnis_2": "Beratungsergebnis: Einstimmig beschlossen",
+    "stimmenverteilung": null
+  },
+  "files": [
+    {
+      "url": "https://sessionnet.owl-it.de/duisburg/bi/getfile.asp?id=1777376&type=do",
+      "label": "Beschlussvorlage",
+      "id": "1777376",
+      "type": "do"
+    },
+    {
+      "url": "https://sessionnet.owl-it.de/duisburg/bi/getfile.asp?id=1785203&type=do",
+      "label": "DS 26-0084 Anlage 1 Vereinbarung DU WES ab 2027",
+      "id": "1785203",
+      "type": "do"
+    },
+    {
+      "url": "https://sessionnet.owl-it.de/duisburg/bi/getfile.asp?id=1785205&type=do",
+      "label": "DS 26-0084 Anlage 2 Stadt DU- Berechnung Finanzmittel 2027 bis 2030",
+      "id": "1785205",
+      "type": "do"
+    },
+    {
+      "url": "https://sessionnet.owl-it.de/duisburg/bi/getfile.asp?id=1785206&type=do",
+      "label": "DS 26-0084 Finanzielle Auswirkungen",
+      "id": "1785206",
+      "type": "do"
+    }
+  ],
+  "saved_at": "2026-05-19T16:55:00Z"
+}

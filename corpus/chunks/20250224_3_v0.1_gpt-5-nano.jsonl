@@ -1,0 +1,68 @@
+{
+  "run_id": "c29f324e-f370-4ccc-884e-d2d4d78b9366",
+  "model": "gpt-5-nano",
+  "created_at": "2025-08-12T15:52:18.666882+00:00",
+  "prompt_version": "v0.1",
+  "system_prompt": "SYSTEM (Rolle):\nDu bist ein neutraler, faktenorientierter Assistent für kommunalpolitische Protokolle. Du extrahierst Informationen strikt aus dem vorliegenden Text, ohne zu spekulieren. Du gibst ausschließlich valide, parsebare JSON-Ausgaben gemäß Schema zurück. Wenn Angaben fehlen, schreibe \"keine Angabe\".\n\nBENUTZER (Rolle) – Anweisung + Inputplatzhalter:\nAufgabe: Verarbeite den folgenden Tagesordnungspunkt (TOP) aus einer Ratssitzung.\n\nZiele:\n1) Neutrale Kurz-Zusammenfassung für Öffentlichkeit/Medien.\n2) Strukturiertes Fakten- und Positions-Extrakt für RAG.\n\nRegeln:\n- Kein Fließtext außerhalb der JSON-Felder.\n- Keine Bewertung, nur im Text belegbare Fakten/Zitate.\n- Zahlen/Eurobeträge/Prozente/Termine normalisieren (z. B. 165000000, „2025-04-30“).\n- Jede Liste darf leer sein, aber Felder dürfen nie fehlen.\n- Verwende \"keine Angabe\", wenn etwas nicht vorhanden ist.\n- Zitate: kurze wörtliche Formulierungen oder sehr nah am Text; Quelle angeben.\n- Parteien/Fraktionen und Personen exakt benennen, wie im Text.\n- Ein TOP = genau ein JSON-Objekt.\n\nJSON-Schema (Ausgabe muss exakt diesem Schema entsprechen):\n{\n  \"top_id\": \"string\",\n  \"titel\": \"string\",\n  \"kurzfassung\": \"string\",\n  \"zeitraum_bezug\": [\"string\"],\n  \"zahlen_kennzahlen\": [\n    {\"bezeichnung\":\"string\",\"wert_num\":\"number\",\"einheit\":\"string\",\"kontext\":\"string\"}\n  ],\n  \"rechtliche_bezuege\": [\"string\"],\n  \"massnahmen_beschluesse\": [\"string\"],\n  \"parteipositionen\": [\n    {\n      \"partei_fraktion\": \"string\",\n      \"haltung\": \"pro|contra|neutral|keine Angabe\",\n      \"kernaussagen\": [\"string\"],\n      \"zitate\": [{\"quelle_person\":\"string\",\"zitat\":\"string\"}]\n    }\n  ],\n  \"verwaltungsposition\": {\n    \"sprecher_person\": \"string\",\n    \"kernaussagen\": [\"string\"],\n    \"zitate\": [{\"zitat\":\"string\"}]\n  },\n  \"kritik_punkte\": [\"string\"],\n  \"erklaerungen_rechtfertigungen\": [\"string\"],\n  \"risiken\": [\"string\"],\n  \"offene_fragen\": [\"string\"],\n  \"provenienz\": [\n    {\"typ\":\"satz|absatz|tabelle\",\"auszug\":\"string\"}\n  ],\n  \"verstaendlichkeit_score\": 0.0\n}\n\nHinweise zur Befüllung:\n- titel: knapp, z. B. „GEBAG/FE – finanzielle Lage, Teilvermögensübertragung, Steuerfolgen“.\n- zeitraum_bezug: alle relevanten Jahre/Monate (z. B. „2023“, „2024-12-31“, „2025-02“).\n- zahlen_kennzahlen: z. B. 165 Mio €, 123,5 Mio €, 41,5 Mio €, 19 % EK-Quote, 3 Mio € Zinsen/Jahr, 5,5 Mio € GrESt.\n- rechtliche_bezuege: §§ 15a InsO, §§ 172 ff. AO, § 6a GrEStG, HGB, GuV etc.\n- parteipositionen: erfasse explizite Aussagen von Fraktionen/Parteien; wenn nur FDP als Fragesteller erkennbar ist, deren Kritikpunkte aufnehmen; andere als „keine Angabe“.\n- verwaltungsposition: Aussagen des Stadtdirektors (Murrack) komprimieren; markante Zitate/Begründungen.\n- kritik_punkte: Vorwürfe (Überbewertungen, spätes Informieren, Controlling/Aufsicht).\n- erklaerungen_rechtfertigungen: Begründungen (externe Faktoren, positive Tendenzen, Maßnahmenpaket).\n- risiken: Insolvenzrisiko, Steuer-Nachzahlungen, Governance/Controlling-Lücken.\n- offene_fragen: was aus dem Text unbeantwortet bleibt.\n- provenienz: 3–6 kurze wörtliche Auszüge als Belege.\n- verstaendlichkeit_score: Zahl 0–1 (1 = leicht für Allgemeinheit).",
+  "user_input": "Sparkassenzweckverband der Städte Duisburg und Kamp-Lintfort; hier: Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung: Beschluss Für die restliche Dauer der Wahlzeit des Rates der Stadt soll der Verbandsversammlung des Sparkassenzweckverbandes als von der Stadt Duisburg entsandtes Mitglied für Rh Dr. Ste- phan Wedding (JuDu) angehören: Ratsfrau Wedding -Junges Duisburg- Beratungsergebnis -einstimmig-",
+  "input_hash": "a19e9399564b3d49a09b13cfb2eb51938a574b08228eaee0b61946ab0f77e5b4",
+  "params": {
+    "temperature": 0.1
+  },
+  "output_text": "{\n  \"top_id\": \"keine Angabe\",\n  \"titel\": \"Sparkassenzweckverband Duisburg/Kamp-Lintfort – Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung\",\n  \"kurzfassung\": \"Beschluss: Für die restliche Dauer der Wahlzeit des Rates der Stadt soll Ratsfrau Wedding (Junges Duisburg) als von der Stadt Duisburg entsandtes Mitglied der Zweckverbandsversammlung des Sparkassenzweckverbandes angehören; Beratungsergebnis einstimmig.\",\n  \"zeitraum_bezug\": [\"keine Angabe\"],\n  \"zahlen_kennzahlen\": [],\n  \"rechtliche_bezuege\": [\"keine Angabe\"],\n  \"massnahmen_beschluesse\": [\n    \"Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung des Sparkassenzweckverbandes; von der Stadt Duisburg entsandtes Mitglied Ratsfrau Wedding (Junges Duisburg) für die restliche Wahlzeit des Rates der Stadt; Beschluss einstimmig.\"\n  ],\n  \"partep_positionen\": [\n    {\n      \"partei_fraktion\": \"Junges Duisburg (JuDu)\",\n      \"haltung\": \"keine Angabe\",\n      \"kernaussagen\": [],\n      \"zitate\": []\n    }\n  ],\n  \"verwaltungsposition\": {\n    \"sprecher_person\": \"keine Angabe\",\n    \"kernaussagen\": [],\n    \"zitate\": []\n  },\n  \"kritik_punkte\": [],\n  \"erklaerungen_rechtfertigungen\": [],\n  \"risiken\": [],\n  \"offene_fragen\": [],\n  \"provenienz\": [\n    {\"typ\":\"satz\",\"auszug\":\"Sparkassenzweckverband der Städte Duisburg und Kamp-Lintfort; Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung\"},\n    {\"typ\":\"satz\",\"auszug\":\"Für die restliche Dauer der Wahlzeit des Rates der Stadt soll der Verbandversammlung des Sparkassenzweckverbandes als von der Stadt Duisburg entsandtes Mitglied für Rh Dr. Stephan Wedding (JuDu) angehören: Ratsfrau Wedding -Junges Duisburg-\"},\n    {\"typ\":\"satz\",\"auszug\":\"Beratungsergebnis -einstimmig-\"}\n  ],\n  \"verstaendlichkeit_score\": 0.6\n}",
+  "output_json": {
+    "top_id": "keine Angabe",
+    "titel": "Sparkassenzweckverband Duisburg/Kamp-Lintfort – Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung",
+    "kurzfassung": "Beschluss: Für die restliche Dauer der Wahlzeit des Rates der Stadt soll Ratsfrau Wedding (Junges Duisburg) als von der Stadt Duisburg entsandtes Mitglied der Zweckverbandsversammlung des Sparkassenzweckverbandes angehören; Beratungsergebnis einstimmig.",
+    "zeitraum_bezug": [
+      "keine Angabe"
+    ],
+    "zahlen_kennzahlen": [],
+    "rechtliche_bezuege": [
+      "keine Angabe"
+    ],
+    "massnahmen_beschluesse": [
+      "Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung des Sparkassenzweckverbandes; von der Stadt Duisburg entsandtes Mitglied Ratsfrau Wedding (Junges Duisburg) für die restliche Wahlzeit des Rates der Stadt; Beschluss einstimmig."
+    ],
+    "partep_positionen": [
+      {
+        "partei_fraktion": "Junges Duisburg (JuDu)",
+        "haltung": "keine Angabe",
+        "kernaussagen": [],
+        "zitate": []
+      }
+    ],
+    "verwaltungsposition": {
+      "sprecher_person": "keine Angabe",
+      "kernaussagen": [],
+      "zitate": []
+    },
+    "kritik_punkte": [],
+    "erklaerungen_rechtfertigungen": [],
+    "risiken": [],
+    "offene_fragen": [],
+    "provenienz": [
+      {
+        "typ": "satz",
+        "auszug": "Sparkassenzweckverband der Städte Duisburg und Kamp-Lintfort; Bestellung eines Nachfolgemitgliedes für die Zweckverbandsversammlung"
+      },
+      {
+        "typ": "satz",
+        "auszug": "Für die restliche Dauer der Wahlzeit des Rates der Stadt soll der Verbandversammlung des Sparkassenzweckverbandes als von der Stadt Duisburg entsandtes Mitglied für Rh Dr. Stephan Wedding (JuDu) angehören: Ratsfrau Wedding -Junges Duisburg-"
+      },
+      {
+        "typ": "satz",
+        "auszug": "Beratungsergebnis -einstimmig-"
+      }
+    ],
+    "verstaendlichkeit_score": 0.6
+  },
+  "latency_ms": 22356,
+  "input_tokens": 2936,
+  "output_tokens": 1829,
+  "error": null,
+  "meta": {
+    "meeting_date": "20250224",
+    "top_id": "3"
+  }
+}

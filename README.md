@@ -1,11 +1,17 @@
-# End-to-end RAG workflow - WIP
+# End-to-end RAG workflow - Work in Progress
 
-Dieses Projekt implementiert einen Retrieval-Augmented-Generation-(RAG)-Workflow für kommunalpolitische Informationen der Stadt Duisburg.
+Dieses Projekt implementiert einen Retrieval-Augmented-Generation-(RAG)-Workflow für Ratssitzungen der Stadt Duisburg.
 
 Datengrundlage ist das öffentliche Ratsinformationssystem der Stadt Duisburg.
 
-Das Projekt hostet kein eigenes Large Language Model (LLM), sondern verfolgt einen BYOM-Ansatz ("Bring Your Own Model/API Key"). 
-Nutzer können eigene API-Zugänge zu extern gehosteten Modellen (z. B. OpenAI, Anthropic oder Mistral) verwenden.
+[//]: # (Das Projekt hostet kein eigenes Large Language Model &#40;LLM&#41;, sondern verfolgt einen BYOM-Ansatz &#40;"Bring Your Own Model/API Key"&#41;. )
+
+[//]: # (Nutzer können eigene API-Zugänge zu extern gehosteten Modellen &#40;z. B. OpenAI, Anthropic oder Mistral&#41; verwenden.)
+
+<p float="left">
+  <img src="public/screenshot_ki_model.png" width="49%" />
+  <img src="public/screenshot_ki_suche.png" width="49%" />
+</p>
 
 ## Daten- und Dokumentenerschließung
 - Crawling des Bürgerportals des Ratsinformationssystems Duisburg
@@ -22,6 +28,9 @@ Nutzer können eigene API-Zugänge zu extern gehosteten Modellen (z. B. OpenAI, 
 | `pe[xxxx].asp` | Person detail |
 | `vo[xxxx].asp` | Vorlagen |
 | `do[xxxx].asp` | Dokumente |
+
+(Sitzungsdaten werden ca alle sechs Monate aktualisiert)
+
 
 ### Abbildung von Strukturen und Zusammenhängen
 - Darstellung in einer Graph-Datenbank (Neo4j): 
