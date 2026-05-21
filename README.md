@@ -9,8 +9,8 @@ Datengrundlage ist das öffentliche Ratsinformationssystem der Stadt Duisburg.
 [//]: # (Nutzer können eigene API-Zugänge zu extern gehosteten Modellen &#40;z. B. OpenAI, Anthropic oder Mistral&#41; verwenden.)
 
 <p float="left">
-  <img src="public/screenshot_ki_model.png" width="49%" />
-  <img src="public/screenshot_ki_suche.png" width="49%" />
+  <img src="public/screenshot_ki_model.png" width="80%" />
+  <img src="public/screenshot_ki_suche.png" width="80%" />
 </p>
 
 ## Daten- und Dokumentenerschließung

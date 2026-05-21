@@ -27,18 +27,15 @@ frontend/**
 
 !frontend/
 !frontend/ki_assistent/
+!frontend/gremien_monitor/
+!frontend/gremien_monitor/src/
+!frontend/gremien_monitor/src/app/
+!frontend/gremien_monitor/src/app/RatsinfoExplorer.tsx
+!frontend/gremien_monitor/src/app/page.tsx
 
 !frontend/ki_assistent/app_noRAG.py
 !frontend/ki_assistent/config.toml
 
-#corpus/source_pdfs/*
-#!corpus/source_pdfs/README.md
-#!corpus/source_pdfs/manifest.jsonl
-#corpus/text/20250224_duisburg_ratssitzung_öffentlich/*
-#!corpus/chunks/20250224_duisburg_ratssitzung_öffentlich/all_tops.jsonl
-#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_2.jsonl
-#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_3.jsonl
-#!corpus/text/20250224_duisburg_ratssitzung_öffentlich/top_4.jsonl
 
 graphdb/**
 !graphdb/
